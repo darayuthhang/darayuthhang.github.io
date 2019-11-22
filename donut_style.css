@@ -1,0 +1,331 @@
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+html{
+   font-family: Arial, Helvetica, sans-serif;
+   scroll-behavior: smooth;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#nav_bar_grid{
+	display: grid;
+	margin-left: 10px;
+	position: sticky;
+	width: 100%;
+	grid-template-columns: 1fr 1fr;
+	justify-content: end;
+	margin-bottom: 30px;
+}
+#nav_right{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+
+}
+
+#nav_right li{
+	list-style: none;
+}
+
+#nav_right li a {
+	text-decoration: none;
+	color: black;
+}
+
+/***text size image ****/
+
+#text_in_middle_image{
+	font-size: 48px;
+	padding: 0;
+	font-weight: bold;
+	letter-spacing: normal;
+	line-height: normal;
+	color: #000000;
+}
+
+/*****avoid extra space of h1, h2, h3****/
+h1, h2, h3{
+	margin: 5px;
+	padding: 5px;
+}
+
+/***background of container image middle ***/
+
+.container_image{
+	background: url('donut.jpg');
+	box-shadow: var(--shadow);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: 100% 100%;
+	height: 920px;
+}
+/*****set up the positionto move the back of header text to btm***/
+.container_image{
+	position: relative;
+	width: 100%;
+	z-index: -1;
+}
+/***background wrapp around the donut header text ***/
+#text_in_middle_image{
+	border: 1px solid #dbe0db;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: rgb(219,224,219, 0.5);
+	position: absolute;
+	top: 55%;
+	width: 100%;
+}
+/*****back of text to transparent ***/
+.our_menu{
+	
+	padding: 0;
+	display: grid;
+	grid-row-gap: 20px;
+	justify-content: center;
+	align-content: center;
+	height: 400px;
+	text-align: center;
+	box-shadow: var(--shadow);
+}
+
+#our_menu_font{
+	font-size: 80px;
+}
+#what_in_store_font{
+
+	font-size: 30px;
+}
+
+/***** three grid images *****/
+#container_three_grid_images{
+	height: 600px;
+	width: 100%;
+}
+#three_grid_images{
+	display: grid;
+	padding: 0;
+	margin: 0;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+	height: 600px;
+	box-shadow: var(--shadow);
+
+}
+/****firt grid image ****/
+#first_grid_image{
+	background: url('donut.jpg');
+	
+	background-repeat: no-repeat;
+	background-position:center;
+	display: grid;
+	align-content: center;	
+	box-shadow: var(--shadow);
+}
+
+
+/****second grid image *****/
+#second_grid_image{
+	background: url('donut.jpg');
+
+	background-repeat: no-repeat;
+	background-position:center;
+	box-shadow: var(--shadow);
+	display: grid;
+	align-content: center;	
+
+}
+/****third grid image *****/
+#third_grid_image{
+	background: url('donut.jpg');
+	
+	background-repeat: no-repeat;
+	background-position:center;
+	box-shadow: var(--shadow);
+	display: grid;
+	align-content: center;	
+}
+
+/****check our menu********/
+#grid_check_our_menu{
+	display: grid;
+	justify-content: center;
+	text-align: center;
+}
+
+
+/****checkout menu ***/
+
+#grid_check_our_menu{
+	display: grid;
+	justify-content: center;
+	text-align:center;
+	grid-row-gap: 20px;
+	line-height: 1.44em;
+	 font-size: 25px;
+}
+
+
+#check_out_menu{
+  border: 1px solid red;
+  background-color: rgba(0, 0, 0, 1);
+  border: none;
+  padding: 14px 31px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+#check_out_menu a{
+	  color: white;
+	  font-size: 23px;
+	  font-weight: bold;
+}
+/***addd hover *****/
+#check_out_menu:hover{
+	background: rgb(219,224,219);
+}
+
+
+/********about us *********/
+#container_about_us{
+	display: grid;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	box-shadow: var(--shadow);
+	height: 500px;
+	width: 100%;
+	
+}
+
+#about_us_background{
+	position: absolute;
+	right: 13%;
+	z-index: -1;
+	background: url('donut.jpg');
+	border: 4px solid black;
+	background-repeat: no-repeat;
+	background-position:center;
+	box-shadow: var(--shadow);
+	height: 490px;
+	width:1000px;
+	/*right: 400px;*/
+
+}
+#about_us{
+	/*position: absolute;*/
+/*	left: 38%;
+	bottom: -210%;
+*/
+	padding: 0;
+	margin: 0;
+	font-size: 80px;
+	color: white;	
+}
+
+/********container history ******/
+#container_our_history{
+	height: 400px;
+	margin-top: 50px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+/******* contact ********/
+#container_opening_hour{
+	display: grid;
+	width: 100%;
+	height: 600px;
+	align-content: center;
+	box-shadow: var(--shadow);
+	background: rgb(219,224,219, 0.5);
+}
+#sub_container_opening_hour{
+	display: grid;
+	grid-row-gap: 10px;
+	justify-content: center;
+	text-align: center;
+}
+
+
+/******contact us ********/
+#container_contact_us{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+#sub_container_contact_us{
+	display: grid;
+	justify-content: center;
+	text-align: center;
+
+}
+
+
+/***** google map ******/
+#map{
+	height: 500px;
+	width: 100%;
+	box-shadow: var(--shadow);
+}
+#link{
+	position: absolute;
+}
+
+
+
+
+/********scale fit to mobile ********/
+@media only screen and (max-width: 600px) {
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+/******middle image experince ****/
+  #text_in_middle_image{
+  	position: absolute;
+  	top: 35.4%;
+  }
+  /*****nav bar *****/
+  #nav_bar_grid{
+  	display: grid;
+  	grid-template-columns: 1fr;
+  }
+  /*****opening hour ******/
+  #container_opening_hour{
+  	margin-top: 50px;
+  }
+  /****about_us_background *****/
+  #about_us_background{
+  	position: absolute;
+  	right: 0;
+  }
+
+  /*****three grid image ****/
+  #three_grid_images{
+  	display: grid;
+  	grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
