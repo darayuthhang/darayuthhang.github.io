@@ -1,170 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<title>AI Hub - Your Gateway to AI Tools</title>
-	<link rel="stylesheet" href="ai_style.css">
-	<script src="ai.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>AI Hub - Explore the Future of Artificial Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-	<a href="https://www.3dlogoai.com/">Built by the 3DLogoAI Team</a>
-	<nav id="nav_bar_grid">
-			<h1>AI Innovation Hub</h1>	
-		
-		<ul id="nav_right">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">AI Tools</a></li>
-			<li><a href="#container_about_us">About Us</a></li>
-			<li><a href="#container_opening_hour">Services</a></li>
-			<li><a href="#container_contact_us">Contact Us</a></li>
-		</ul>
-	</nav>
+<body class="bg-gray-900 text-white font-sans">
 
-	<!----- AI Header Image ---->
-	<div class="container_image">
-		<ul id="text_in_middle_image">
-			<h1>Welcome to the Future of AI</h1>
-			<h2>Explore Cutting-Edge AI Tools</h2>
-			<h3>Your Innovation Starts Here</h3>
-		</ul>
-	</div>
+<!-- Header / Navbar -->
+<header class="bg-gradient-to-r from-blue-600 to-purple-700 shadow-lg">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <h1 class="text-3xl font-bold">AI Hub</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#our_menu" class="hover:text-gray-300">AI Tools</a></li>
+                <li><a href="#about_us" class="hover:text-gray-300">About Us</a></li>
+                <li><a href="#opening_hours" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#contact_us" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-	<!---- Our AI Tools ---->
-<div class="middle_container">
-	<ul class="our_menu">
-		<li><strong id="our_menu_font">Our Tools</strong></li>
-		<li><strong id="what_in_store_font">What We Offer</strong></li>
-	</ul>
-</div>
+<!-- Hero Section -->
+<section class="relative h-[60vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?technology,ai');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-lg text-center">
+        <h1 class="text-4xl font-extrabold mb-2">Explore the Future of AI</h1>
+        <p class="text-lg">Discover cutting-edge tools, innovations, and insights.</p>
+    </div>
+</section>
 
-<!------Three AI Features ---->
-<div id="container_three_grid_images">
-	<ul id="three_grid_images">
-		<li id="first_grid_image">
-			<p><h1>AI Logo Generator</h1></p>
-			<p>Create 3D AI Logos in Seconds</p>	
-		</li>
-	
-		<li id="second_grid_image">
-			<p><h1>Content AI
-				<br>
-				Writer
-			</h1></p>
-			<p>Generate Blogs, Ads & More</p>
-		</li>
+<!-- Our Menu - AI Tools Section -->
+<section id="our_menu" class="py-16 bg-gray-800">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Our AI Tools</h2>
+        <p class="text-gray-400 mb-8">Explore a collection of powerful AI tools built for developers, creators, and businesses.</p>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-700 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">AI Text Generator</h3>
+                <p class="text-gray-400">Create blog posts, product descriptions, and more with AI-powered text generation.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">AI Image Creator</h3>
+                <p class="text-gray-400">Generate stunning visuals and artwork using advanced AI models.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">AI SEO Assistant</h3>
+                <p class="text-gray-400">Boost your website's search ranking with intelligent keyword analysis.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<li id="third_grid_image">
-			<p><h1>AI Image
-			   <br>
-			   Enhancer
-			   <br>
-			   Pro
-			</h1>
-			</p>
-			<p>Boost Image Quality Instantly</p>
-		</li>
-	</ul>
-</div>
+<!-- About Us -->
+<section id="about_us" class="py-16 bg-gray-900">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">About Us</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">
+            AI Hub was founded in 2023 with a mission to bring the power of artificial intelligence to everyone. 
+            We are passionate about making AI accessible, intuitive, and impactful for businesses, developers, and creators.
+        </p>
+    </div>
+</section>
 
-<!------Explore More ---->
-<div id="container_check_our_menu">
-	<ul id="grid_check_our_menu">
-		<p><strong>We have more powerful AI tools waiting for you - Explore Now!</strong></p>
-		<li id="container_check_out_menu">
-			<button id="check_out_menu">
-			<a href="#">Explore All Tools</a>
-			</button>
-		</li>
-	</ul>
-</div>
+<!-- Opening Hours / Services -->
+<section id="opening_hours" class="py-16 bg-gray-800">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+        <p class="text-gray-400 mb-8">We offer a range of AI development, consulting, and integration services.</p>
+        <ul class="text-lg">
+            <li class="mb-2">✅ Custom AI Model Development</li>
+            <li class="mb-2">✅ AI Automation for Businesses</li>
+            <li class="mb-2">✅ AI Consulting & Strategy</li>
+            <li class="mb-2">✅ Training & Workshops</li>
+        </ul>
+    </div>
+</section>
 
-<!----- About Us ---->
-<div id="container_about_us">
-	<h1 id="about_us">About Us</h1>
-	<div id="about_us_background"></div>
-</div>
+<!-- Contact Us -->
+<section id="contact_us" class="py-16 bg-gray-900">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <p class="text-gray-400 mb-4">Let's build something amazing with AI. Reach out to our team today.</p>
+        <div class="flex flex-col items-center space-y-2">
+            <p>Email: <a href="mailto:hello@aihub.com" class="text-blue-400 hover:underline">hello@aihub.com</a></p>
+            <p>Phone: <a href="tel:+1234567890" class="text-blue-400 hover:underline">+1 (234) 567-890</a></p>
+            <p>Location: 123 AI Street, Tech City, TX 75000</p>
+        </div>
+    </div>
+</section>
 
-<!---- Our Story ---->
-<div id="container_our_history">
-	<h1>Our Journey</h1>
-	<h2 style="margin-top: 20px">
-		Founded in 2021, AI Innovation Hub has been helping businesses, creators, and developers unlock the power of artificial intelligence. From AI-driven content creation to smart image enhancement, we’re proud to be part of the tech evolution. Join us as we continue to build tools that shape the future.
-	</h2>
-</div>
+<!-- Google Map -->
+<section class="py-16 bg-gray-800">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Find Us</h2>
+        <div class="w-full h-64 bg-gray-700 rounded-lg overflow-hidden">
+            <iframe 
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3fa8O7f9Nekmrj5WCESPof0gsQEFoeaE
+                &q=123+AI+Street,Tech+City,TX"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
 
-<!------ Services ---->
-<div id="container_opening_hour">
-	<ul id="sub_container_opening_hour">
-		<i style="font-size: 40px" class="far fa-clock"></i>
-		<h1>Our Services</h1>
-		<h2>Available 24/7 - AI Never Sleeps</h2>	
-	</ul>
-</div>
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-blue-600 to-purple-700 py-6 text-center">
+    <p>&copy; 2025 AI Hub. All rights reserved. Built with ❤️ by <a href="https://www.3dlogoai.com/" class="underline">3DLogoAI Team</a>.</p>
+</footer>
 
-<!------ Contact Us ---->
-<div id="container_contact_us">
-	<ul id="sub_container_contact_us">
-		<h1>Contact</h1>
-		<h2>AI Innovation Hub Headquarters</h2>
-		<h3>support@aihub.com</h3>
-		<h4>+1-800-AI-TOOLS</h4>
-	</ul>
-</div>
-
-<!---- Google Map (can be adjusted if real location exists) ----->
-<h3>Find Us on Google Maps</h3>
-<div id="map">
-	<a id="link" href="#">Get Directions</a>
-</div>
-
-<script>
-function initMap() {
-	infowindow() 
-}
-
-function infowindowContext(){
-	let link = "https://www.google.com/maps?q=AI+Innovation+Hub";
-	let div = document.createElement("div");
-	let p = document.createElement("p");
-	let a = document.createElement("a");
-
-	p.innerHTML = "AI Innovation Hub Headquarters";
-	a.setAttribute("href", link);
-	a.innerHTML = "Get Directions";
-	div.appendChild(p);
-	div.appendChild(a);
-	return div;	
-}
-function infowindow() {
-	var uluru = {lat: 37.7749, lng: -122.4194}; // Example: San Francisco, change if needed
-	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 10,
-		center: uluru
-	});
-	var contentString = infowindowContext();
-
-	var infowindow = new google.maps.InfoWindow({
-		content: contentString
-	});
-
-	var marker = new google.maps.Marker({
-		position: uluru,
-		map: map,
-		title: 'AI Innovation Hub'
-	});
-	marker.addListener('click', function() {
-		infowindow.open(map, marker);
-	});
-}
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3fa8O7f9Nekmrj5WCESPof0gsQEFoeaE&callback=initMap">
-</script>
-
-</div>
 </body>
 </html>
